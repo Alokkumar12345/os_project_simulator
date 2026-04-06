@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { Play, Pause, SkipForward, SkipBack, RotateCcw, Shuffle, Settings2, Activity } from 'lucide-react';
 import { runFIFO, runLRU, runOptimal } from './logic/algorithms';
 
+// Utility to generate a random sequence for testing
 function generateRandomSequence(length, maxPage) {
   return Array.from({ length }, () => Math.floor(Math.random() * maxPage));
 }
